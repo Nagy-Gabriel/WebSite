@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: url('C:\Users\nagyg\Desktop\react_project\website\public\img\back8.jpg') no-repeat center center fixed;
+    /* Acesta este selectorul pentru imaginea de fundal, înlocuiește 'calea/catre/imaginea-ta.jpg' cu calea către imaginea ta */
+    background-size: cover;
+}
+.products
+{
+    padding: 30px 100px;
+    width: 100%;
+}
+.products h2
+{
+    font-size:42px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: green;
+}
+.products p
+{
+    margin-top:10px;
+    color: rgb(255, 255, 255);
+}
+.products .container
+{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.products .container .filter {
+    width: 25%;
+    padding: 20px 10px;
+    position: relative;
+    left: -230px; 
+}
+
+.products .container .filter .categories h3
+{
+    color: green;
+    font-size:16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.products .container .filter .categories ul
+{
+    margin-top: 10px;
+    padding-left: 0;
+}
+.products .container .filter .categories li
+{
+    list-style: none;
+    margin-top:20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.products .container .productbox
+{
+    margin-left:20%;
+    margin-right: 10px;
+    margin-top: -25%
+}
+.products .container .productbox .contant
+{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.products .container .productbox .contant .box
+{
+    padding: 10px 20px;
+    overflow: hidden;
+    width: 300px;
+    height: 410px;
+    border:1px solid #9a9a9a;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+.products .container .productbox .contant .box:hover
+{
+    box-shadow: rgba(4, 138, 4, 0.35) 0px 10px 30px;
+
+}
+.products .container .productbox .contant .box .img_box
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(4, 138, 4, 0.35);
+    position: relative;
+}
+.products .container .productbox .contant .box .img_box img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+.products .container .productbox .contant .box .img_box .icon
+{
+    position: absolute;
+    top: 0;
+    right: 0; 
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+.products .container .productbox .contant .box:hover .img_box .icon
+{
+    opacity: 1; 
+    transform: translateX(-3px, -3px);
+}
+.products .container .productbox .contant .box .img_box .icon li
+{
+    list-style: none;
+    padding: 10px 10px;
+    border-bottom: 1px solid #9a9a9a;
+    color: #fff;
+    cursor: pointer;
+    background: #31a703;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.products .container .productbox .contant .box .img_box .icon li:hover
+{
+    background: #154202;
+    color: #fff;
+}
+.products .container .productbox .contant .box .detail
+{
+    margin-top:10px;
+}
+.products .container .productbox .contant .box .detail h3
+{
+    font-size:16px;
+    margin-top:5px;
+    color: #ffffff;
+    transition:0.5s;
+}
+.products .container .productbox .contant .box:hover .detail h3
+{
+    color:#31a703;
+}
+.products .container .productbox .contant .box .detail h4
+{
+    margin-top:5px;
+    font-size: 14px;
+    color: #31a703;
+    letter-spacing: 1px;
+}
+.product_detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of other content */
+}
+
+.product_detail .container 
+{
+    max-width: 1000px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3 20px rgba(0, 0, 0, 0.24);
+}
+.product_detail .container .closebtn
+{
+    border:none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.product_detail .container .productbox
+{
+    max-width: 100%;
+    display: flex;
+    padding: 20px 30px;
+    margin-top:20px;
+    justify-content: space-between;
+}
+.product_detail .container .productbox .img-box
+{
+    padding: 20px 30px;
+    width: 300px;
+    height: 350px;
+    background: #f1f1f1;
+}
+.product_detail .container .productbox .img-box img
+{
+    width: 200px;
+    height: auto;
+}
+.product_detail .container .productbox .detail
+{
+    margin-left:30px;
+    margin-top:10px;
+}
+.product_detail .container .productbox .detail h4
+{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 200;
+    color: #4b4a4a;
+    letter-spacing: 1px;
+}
+.product_detail .container .productbox .detail h2   
+{
+    margin-top:20px;
+    font-size: 32px;
+    color:black;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.product_detail .container .productbox .detail p
+{
+    margin-top:10px;
+    color:#4b4a4a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.product_detail .container .productbox .detail h3
+{
+    margin-top:10px;
+    color:#31a703;
+    font-size:22px;
+    letter-spacing: 1px;
+}
+.product_detail .container .productbox .detail button
+{
+    margin-top:30px;
+    padding: 15px 40px;
+    font-size: 18px;
+    color: #fff;
+    background:linear-gradient(to right, black,#4b4a4a );
+    transition: 1s;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+.product_detail .container .productbox .detail button:hover
+{
+    background: rgb(1, 80, 1);
+}

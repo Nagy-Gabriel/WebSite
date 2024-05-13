@@ -1,0 +1,101 @@
+.footer {
+    background-color:#b3afaf;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about,
+.account,
+.page {
+    flex: 1;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.about p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.logo img {
+    max-width: 85px;
+    max-height: 100px;
+}
+
+.icon {
+    margin-top: 10px;
+}
+
+.icon li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    color: #0077b5; /* culoarea LinkedIn */
+    font-size: 24px;
+}
+
+.icon li:last-child {
+    margin-right: 0;
+}
+
+h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 16px;
+    color: #1c241c;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+ul li:hover
+{
+    color: green;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer .container .about .detail .icon
+{
+    display: flex;
+}
+.footer .container .about .detail .icon li
+{
+    margin-left: 20px;
+    list-style: none;
+    padding: 10px 10px;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .container .about .detail .icon li:hover
+{
+background: green;
+color: #ffffff;
+border-radius: 20px;
+border-color: green;
+font-size: 20px;
+}
+
