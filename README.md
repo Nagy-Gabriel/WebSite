@@ -1,2 +1,1 @@
-# MyGame
-My first game in unity
+A site for computer components using ReactJS.
